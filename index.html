@@ -87,15 +87,36 @@
         footer a:hover {
             text-decoration: underline;
         }
-    </style>
 
+        .nav-links {
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links li:nth-child(2) {
+            margin-left: auto;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffe9a3;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        แนะนำวัดที่ต้องไปให้ได้ในโคราช
-        <h3><a href="login.html">เข้าสู่ระบบ / ล็อกอิน</a></h3>
+        <nav>
+            <ul class="nav-links" style="display: flex; align-items: flex-end;">
+                <li><a href="index.html">Temptra</a></li>
+                <li><a href="create.html">เกี่ยวกับเรา</a></li>
+                <li><a href="login.html">ล็อกอิน / เข้าสู่ระบบ</a></li>
+            </ul>
+        </nav>
+        <h3>แนะนำวัดที่ต้องไปในโคราช</h3>
     </header>
 
     <div class="content">
